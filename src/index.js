@@ -5,15 +5,15 @@ import disk from 'tilestrata-disk';
 import config from './config';
 
 const {
-  web: { port, path },
-  map: { basePath, layerName }
+  web: { port, address },
+  map: { basePath }
 } = config;
 
 const server = tilestrata();
 
 server
-  .layer(layerName)
-  .route(path)
+  .layer('base')
+  .route('*.png')
   .use(disk.provider(join(basePath, '{z}', '{x}', '{y}.png')));
 
-server.listen(port);
+server.listen(port, address);

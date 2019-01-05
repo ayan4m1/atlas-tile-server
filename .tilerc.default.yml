@@ -1,6 +1,9 @@
 web:
+  # the port to bind to
   port: 8080
-  path: '*.png'
+  # the host address to bind to
+  address: 127.0.0.1
 map:
+  # the path to look for tile images in
+  # <basePath>/0/0/0.png should be a file
   basePath: /path/to/maps
-  layerName: base
