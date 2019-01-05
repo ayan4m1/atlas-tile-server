@@ -4,7 +4,9 @@
   "description": "Tile server for Atlas server grids",
   "main": "lib/index.js",
   "scripts": {
-    "test": "jest"
+    "build": "gulp",
+    "watch": "gulp watch",
+    "start": "node lib/index.js"
   },
   "repository": {
     "type": "git",
