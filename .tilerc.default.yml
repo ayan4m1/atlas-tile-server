@@ -1,0 +1,6 @@
+web:
+  port: 8080
+  path: '*.png'
+map:
+  basePath: /path/to/maps
+  layerName: base
