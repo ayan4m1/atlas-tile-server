@@ -1,4 +1,4 @@
-# Atlas Tile Server
+# ATLAS Tile Server
 
 This project provides one half of a simple and flexible system for displaying a [slippy map](https://en.wikipedia.org/wiki/Tiled_web_map) of an ATLAS server grid. Its companion project is [ATLAS Map](https://github.com/ayan4m1/atlas-map).
 
