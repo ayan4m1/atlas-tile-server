@@ -151,7 +151,7 @@
     "valid-typeof": 2,
     "vars-on-top": 2,
     "yoda": 2,
-    "no-console": 2,
+    "no-console": 0,
     "no-debugger": 2,
     "prettier/prettier": [2, { "singleQuote": true }]
   }

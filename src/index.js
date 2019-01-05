@@ -16,4 +16,5 @@ server
   .route('*.png')
   .use(disk.provider(join(basePath, '{z}', '{x}', '{y}.png')));
 
+console.log(`Listening on http://${address}:${port}/\n`);
 server.listen(port, address);
