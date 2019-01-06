@@ -20,7 +20,21 @@ Now, clone this repository and run:
 npm install
 ```
 
-Next, copy `.tilerc.default.yml` to a new file named `.tilerc.yml`. Open this file in a text editor. The only entry you need to change is `map.basePath`. Set it to the absolute path to your map directory. On Windows, format the path like `C:/TileServer/Map`. Change `web.address` to an IP/hostname other than `localhost` if you want it to be publicly accessible.
+Next, copy `.tilerc.default.yml` to a new file named `.tilerc.yml`. Open this file in a text editor. The only entry you need to change is the `path` entry under the map named "base". Set it to the absolute path to your map directory. On Windows, format the path like `'C:/TileServer/Map'`. Change `web.address` to an IP/hostname other than `localhost` if you want it to be publicly accessible.
+
+Here is an example of how you'd go about hosting multiple maps from a single tile server:
+
+```yaml
+maps:
+  - name: first
+    path: /path/to/map1
+  - name: second
+    path: /path/to/map2
+  - name: third
+    path: /path/to/map3
+```
+
+In this configuration, `http://localhost:8080/first/0/0/0.webp`, `http://localhost:8080/second/0/0/0.webp`, and `http://localhost:8080/third/0/0/0.webp` would all be accessible.
 
 Finally, use:
 
