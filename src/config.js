@@ -4,7 +4,7 @@ const configSearch = cosmiconfig('tile').searchSync();
 
 if (configSearch === null) {
   throw new Error(
-    'Did not find a config file for module name "spyglas" - see https://github.com/davidtheclark/cosmiconfig#explorersearch'
+    'Could not locate config for module name "tile" - see https://github.com/davidtheclark/cosmiconfig#explorersearch'
   );
 }
 
