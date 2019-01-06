@@ -1,7 +1,7 @@
 {
   "name": "atlas-tile-server",
   "version": "0.1.0",
-  "description": "Tile server for Atlas server grids",
+  "description": "Tile server for ATLAS server grids",
   "main": "lib/index.js",
   "engines": {
     "node": ">=10"
