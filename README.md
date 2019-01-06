@@ -2,6 +2,8 @@
 
 This project provides one half of a system for displaying a [slippy map](https://en.wikipedia.org/wiki/Tiled_web_map) of an ATLAS server grid. Its companion project is [ATLAS Map](https://github.com/ayan4m1/atlas-map).
 
+This project requires Node.js version 10 or greater.
+
 ## Prerequisites
 
 First, you need to open a project in the [Server Grid Editor](https://github.com/GrapeshotGames/ServerGridEditor). Then, click on `Generate Slippy Map (Optional Tools)` under the `Export` menu bar entry.
@@ -9,8 +11,6 @@ First, you need to open a project in the [Server Grid Editor](https://github.com
 Create a new output directory and select it. From this point forward, when this document refers to the "map directory", it is referring to the directory you chose here. The export process will take several minutes.
 
 A message box will pop up at the end telling you that the export is complete. You can move the map directory after the Server Grid Editor is done creating it, but if you want to move it after configuring the tile server, make sure you update the path in the tile server configuration!
-
-This project requires Node.js version 10 or greater.
 
 ## Usage
 
