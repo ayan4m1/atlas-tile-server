@@ -60,6 +60,10 @@ If you see `Not found` then the tile server is not matching `/base/0/0/0.webp` a
 * Save transcoded .webp tiles back to disk
 * Generate map tiles directly from grid editor data
 
+## Contributing
+
+Please refer to our [Contribution Guidelines](/.github/CONTRIBUTING.md).
+
 ## Dependencies
 
 This project uses the following libraries:
