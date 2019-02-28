@@ -20,6 +20,18 @@ Now, clone this repository and run:
 npm install
 ```
 
+This step will run `gulp`, a task runner which we use to transpile the source code in `src/` to Node-compatible JS in `lib/`. You can manually run gulp by executing either
+
+```sh
+npm run build
+```
+
+or
+
+```sh
+npx gulp
+```
+
 Next, copy `.tilerc.default.yml` to a new file named `.tilerc.yml`. Open this file in a text editor. The only entry you need to change is the `path` entry under the map named "base". Set it to the absolute path to your map directory. On Windows, format the path like `'C:/TileServer/Map'`. Change `web.address` to an IP/hostname other than `localhost` if you want it to be publicly accessible.
 
 Here is an example of how you'd go about hosting multiple maps from a single tile server:
