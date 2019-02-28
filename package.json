@@ -8,6 +8,7 @@
   },
   "scripts": {
     "build": "gulp",
+    "prepare": "gulp",
     "watch": "gulp watch",
     "start": "node lib/index.js"
   },
