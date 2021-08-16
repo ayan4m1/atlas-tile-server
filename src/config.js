@@ -1,8 +1,8 @@
-import cosmiconfig from 'cosmiconfig';
+import { cosmiconfigSync } from 'cosmiconfig';
 
-const configSearch = cosmiconfig('tile').searchSync();
+const configSearch = cosmiconfigSync('tile').search();
 
-if (configSearch === null) {
+if (!configSearch || configSearch.isEmpty) {
   throw new Error(
     'Could not locate config for module name "tile" - see https://github.com/davidtheclark/cosmiconfig#explorersearch'
   );

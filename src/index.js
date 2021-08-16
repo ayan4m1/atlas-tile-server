@@ -24,7 +24,7 @@ for (const map of maps) {
       .layer(name)
       .route('*.webp')
       .use(disk.provider(join(path, '{z}', '{x}', '{y}.png')))
-      .use(sharp(image => image.webp()));
+      .use(sharp((image) => image.webp()));
   }
 }
 
