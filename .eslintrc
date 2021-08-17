@@ -3,15 +3,21 @@
     "es6": true,
     "node": true
   },
-  "plugins": ["prettier"],
+  "plugins": ["prettier", "import"],
   "extends": [
     "eslint:recommended",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
+    "plugin:import/recommended"
   ],
   "parser": "@babel/eslint-parser",
   "parserOptions": {
     "requireConfigFile": false,
     "ecmaVersion": 12
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {}
+    }
   },
   "rules": {
     "accessor-pairs": 2,
